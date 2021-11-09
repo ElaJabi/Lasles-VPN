@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    transition: .3s linear;
+
+}
+
+:root {
+   --button: #F53838;
+   --color-text: #4F5665;
+}
+
+html {
+    font-size: 90%;
+}
+
+section {
+    padding: 2rem 7%;
+   
+}
+
+body {
+    width: 100%;
+}
+
+.header  {
+    padding: 2rem 7%;
+    
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header .navbar .logo img{
+    width: 100%;
+}
+
+.header .navbar .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-top: .7rem;
+}
+
+.header .navbar .nav-list li {
+    color: var(--color-text);
+
+}
+
+.header .navbar .nav-list li:hover {
+    color: var(--button);
+    font-style: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header .navbar .buttons {
+    margin-top: .7rem;
+
+}
+
+.header .navbar .buttons a {
+    padding: 10px 20px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.header .navbar .buttons .btn  {
+    border: 1px solid var(--button);
+    color:var(--button) ;
+    border-radius: 15px;
+}
+
+.header .navbar .buttons a:hover {
+    color: var(--button);
+}
+
+.header .navbar .buttons .btn:hover {
+    background: var(--button);
+    color: #fff;
+    transition: .4s linear;
+}
+
+.header .hero-wrapper {
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.header .hero-content {
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+}
+
+.header .hero-content .heading h1 {
+    font-size: 3rem;
+}
+
+.header .hero-content button {
+    margin-top: 2.5rem;
+    width: 180px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: var(--button);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: 500;
+    
+}
+
+.header .hero-content button:hover {
+    background: #f04a4a;
+}
+
+.header .image {
+    flex: 1 1 20rem;
+    width: 100%;
+}
+
+.header .image img {
+    width: 100%;
+}
+
+.header .info-box {
+    margin-top: 5rem;
+    display: flex;
+    justify-content:space-evenly;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    
+}
+
+.header .info-box .number-box { 
+    display: flex;
+    gap: 1rem;
+}
+
+.header .info-box .number-box .icon {
+    align-self: center;
+
+}
+
+.header .info-box .number-box .text h3 {
+    text-align: center;
+}
+
+.header .info-box .number-box .text p {
+    margin-top: -1rem;
+    color:var(--color-text);
+    text-align: center;
+}
+
+.introduction-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.introduction-box .image {
+    flex: 1 1 20rem;
+    width: 100%;
+}
+
+.introduction-box .image img {
+    width: 100%;
+}
+
+
+.introduction-box .content-text {
+    flex: 1 1 20rem;
+    align-self: center;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.introduction-box .content-text .heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 60%;
+}
+
+
+.introduction-box .content-text .content .info-point {
+    
+    display: flex;
+    gap: 1rem;
+}
+
+.introduction-box .content-text .content .info-point i {
+    margin-top: 15px;
+    color: rgb(6, 199, 6);
+}
+
+.container-1 {
+    background: #fbfbfb;
+    
+}
+
+.container-1 .heading {
+    text-align: center;
+}
+
+.container-1 .heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container-1 .plan-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.container-1 .plan-boxes .box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem 7rem;
+    text-align: center;
+    border-radius: 5px;
+    
+
+}
+
+.container-1 .plan-boxes .box .info-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-1 .plan-boxes .box .info-plan .list p:hover {
+    color:var(--button);
+}
+
+.container-1 .plan-boxes .box h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container-1 .plan-boxes .box .price {
+    margin-top: 2rem;
+}
+
+.container-1 .plan-boxes .box .price button{
+    padding: 10px;
+    width: 150px;
+    border: var(--button) 3px solid;
+    background: #fff;
+    color:var(--button);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+
+
+.container-1 .plan-boxes .box .price button:hover {
+    background: var(--button);
+    color: #fff;
+    transition: .3s linear;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container-2 .image {
+    width: 80%;
+    margin: auto;
+}
+
+.container-2 .image img {
+    width: 100%;
+}
+
+.container-2 .heading {
+    text-align: center;
+}
+
+.container-2 .heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container-3 .heading {
+    text-align: center;
+}
+
+.container-3 .heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container-3 .testimonials {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.container-3 .testimonials .card {
+    min-width: 300px;
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(228, 17, 17, 0.514) 0px 1px 4px;
+}
+
+.container-3 .testimonials .card .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.container-3 .testimonials .card .user .image {
+    margin-top: 1.5rem;
+}
+
+.container-3 .testimonials .card .user .name h5 {
+    font-size: 1rem;
+}
+
+.container-3 .testimonials .card .user .name p {
+    margin-top: -1.3rem;
+}
+
+.container-3 .testimonials .card .paragraph p {
+    line-height: 1.5;
+}
+
+
+ .subscribe-box {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(184, 25, 25, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 900px;
+    margin: auto;
+    max-height: 200px;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 20px;
+    background: #fff;
+    transform:translateY(20px);
+    z-index: 1000;
+    
+    
+
+}
+
+.subscribe-box .content h2 {
+    width: 70%;
+    font-size: 2rem;
+}
+
+.subscribe-box .button button {
+    width: 200px;
+    height: 60px;
+    background: var(--button);
+    color: #fff;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    border-radius:10px;
+}
+
+
+.footer {
+   background: #f3f3f3; 
+   padding: 4rem 7%;
+   display: flex;
+   justify-content: space-between;
+  
+}
+
+.footer .logo p  {
+    width: 50%;
+}
+
+.footer .footer-lists {
+    display: flex;
+    gap: 5rem;
+}
+
+.footer .footer-lists h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer .footer-lists .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-lists .links a {
+    color:var(--color-text);
+    margin-top: .5rem;
+}
+
+.footer .footer-lists .links a:hover {
+    color:var(--button);
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 80%;
+    }
+
+    .header .navbar .nav-list {
+        display: none;
+    }
+
+    .header .hero-wrapper {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .header .info-box {
+        gap: 0;
+        
+    }
+
+    .header .info-box .number-box {
+        flex-direction: column;
+    }
+
+    .introduction-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .introduction-box .content-text {
+        margin: 0;
+    }
+
+    .introduction-box .content-text .heading h2 {
+        width: 100%;
+    }
+
+    .container-1 .plan-boxes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-1 .plan-boxes .box {
+        padding: 2rem;
+    }
+
+    .container-1 .plan-boxes .box .info-plan {
+        gap: 0;
+    }
+
+    .container-2 {
+        gap: 1rem;
+    }
+
+    .container-3 .testimonials {
+        flex-direction: column;
+        
+    
+    }
+
+    .container-3 .testimonials .card {
+        min-width: 200px;
+        min-height: 100px;
+        padding: 5px;
+    }
+
+    .subscribe-box .content h2 {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    
+    .subscribe-box .button button {
+        width: 100px;
+        height: 40px;
+        font-size: 1rem;
+    
+    }
+   
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .subscribe-box {
+        border-radius: 0;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 475px) {
+
+    html {
+        font-size: 60%;
+    }
+    .header .hero-content button {
+        width: 100%;
+    }
+}
